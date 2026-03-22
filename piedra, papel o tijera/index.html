@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Piedra, papel o tijeras - Pro Versión</title>
+    <link rel="stylesheet" href="./js/styles.css">
+    <script src="./js/codigo.js" defer></script> </head>
+<body>
+    <section id="top">
+        <h1>🎮Piedra, papel o tijera🕹️</h1>
+        <h4>Desafía a la computadora</h4>
+    </section>
+
+    <section id="marcador-seccion">
+        <h3>Marcador (Mejor de 3)</h3>
+        <p>Tú: <span id="vidas-jugador">0</span> | PC: <span id="vidas-pc">0</span></p>
+    </section>
+
+    <section id="mid">
+        <button class="botonm" id="btn-piedra">
+            🪨
+            <label class="lab">Piedra</label>
+        </button>
+        <button class="botonm" id="btn-papel">
+            📃
+            <label class="lab">Papel</label>
+        </button>
+        <button class="botonm" id="btn-tijeras">
+            ✂️
+            <label class="lab">Tijeras</label>
+        </button>
+    </section>
+
+    <section id="mensajes-seccion">
+        <p id="resultado-ronda">¡Elige tu arma para empezar!</p>
+    </section>
+
+    <section id="reiniciar-seccion" style="display: none;">
+        <h2 id="mensaje-final"></h2>
+        <button id="boton-reiniciar">Jugar de Nuevo</button>
+    </section>
+</body>
+</html>

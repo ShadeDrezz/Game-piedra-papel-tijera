@@ -1,0 +1,101 @@
+body {
+    background-image: url(/assets/game.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Titulo y subtitulo */
+#top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: wheat;
+    margin-top: 20px;
+}
+
+/* Marcador de resultado */
+#marcador-seccion {
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#marcador-seccion span {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #83bac2;
+}
+
+/* Seccion de botones */
+#mid {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap; /* Para móviles */
+}
+
+.botonm {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border: 3px solid wheat;
+    border-radius: 15px;
+    margin: 15px;
+    font-size: 55px;
+    background-color: #83bac2;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonm:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(131, 186, 194, 0.7);
+}
+
+.botonm:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* label de botones */
+.lab {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#mensajes-seccion, #reiniciar-seccion {
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2em;
+    max-width: 80%;
+}
+
+#reiniciar-seccion button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: wheat;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
